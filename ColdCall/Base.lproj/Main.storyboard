@@ -40,17 +40,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awc-8G-Xnx">
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="nuj-Ql-CmP" secondAttribute="leading" id="0oB-Yg-J2P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UOn-j3-mPU" secondAttribute="bottom" constant="51" id="K8a-g7-KEF"/>
+                            <constraint firstItem="awc-8G-Xnx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SZP-Gg-J2x"/>
                             <constraint firstItem="nuj-Ql-CmP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Tdf-1y-k9t"/>
+                            <constraint firstItem="awc-8G-Xnx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="af0-mH-OFN"/>
                             <constraint firstItem="nuj-Ql-CmP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dy6-2g-RYZ"/>
                             <constraint firstItem="UOn-j3-mPU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q2Q-M9-FNP"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="numberLabel" destination="awc-8G-Xnx" id="Z2H-hw-46u"/>
                         <outlet property="topLabel" destination="nuj-Ql-CmP" id="7kq-2y-nfa"/>
                     </connections>
                 </viewController>

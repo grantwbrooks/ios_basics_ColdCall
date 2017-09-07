@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let nameBank = ["Jimmy","Cody","Grant","Harshada","Toro"]
     
     @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,19 @@ class ViewController: UIViewController {
     @IBAction func callButton(_ sender: Any) {
         let rando = Int(arc4random_uniform(5))
         topLabel.text = nameBank[rando]
+        
+        let randoNumb = String(arc4random_uniform(5)+1)
+        numberLabel.text = randoNumb
+        if randoNumb == "1" || randoNumb == "2" {
+            numberLabel.textColor = UIColor.red
+        }
+        else if randoNumb == "3" || randoNumb == "4" {
+            numberLabel.textColor = UIColor.orange
+        }
+        else {
+            numberLabel.textColor = UIColor.green
+        }
+        
     }
     
 }
